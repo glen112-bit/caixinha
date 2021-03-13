@@ -134,5 +134,8 @@
 	<script src="<?php echo INCLUDE_PATH; ?>js/map.js"></script>
 <?php  } ?>
 <script src="<?php echo INCLUDE_PATH; ?>js/formularios.js"></script>
+<script src="<?php echo INCLUDE_PATH; ?>cartas.js"></script>
+<script src="<?php echo INCLUDE_PATH; ?>https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
 </body>
 </html>

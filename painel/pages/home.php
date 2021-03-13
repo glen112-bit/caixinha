@@ -71,6 +71,37 @@
 		</div><!--row-->
 		<?php } ?>
 	</div><!--table-responsive-->
+
+
+<div class="pagination">
+    <div class="pagination-container">
+        <div class="pagination-hover-overlay"></div>
+        <a href="#0" class="pagination-prev">
+            <span class="icon-pagination icon-pagination-prev">
+                <i class="icon material-icons">
+                    keyboard_arrow_left
+                </i>
+            </span>
+        </a>
+
+        <a href="#0" class="pagination-page-number">1</a>
+        <a href="#0" class="pagination-page-number">2</a>
+        <a href="#0" class="pagination-page-number">3</a>
+        <a href="#0" class="pagination-page-number">4</a>
+        <a href="#0" class="pagination-page-number">5</a>
+        <a href="#0" class="pagination-page-number">6</a>
+        <a href="#0" class="pagination-page-number">7</a>
+
+        <a href="#0" class="pagination-next">
+            <span class="icon-pagination icon-pagination-next">
+                <i class="icon material-icons">
+                    keyboard_arrow_left
+                </i>
+            </span>
+        </a>
+    </div>
+</div>
+
 </div><!--box-content-->
 
 <div class="box-content w50 right">

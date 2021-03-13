@@ -16,7 +16,21 @@ class Painel
 		session_destroy();
 		header('Location: '.INCLUDE_PATH_PAINEL);
 	}
-		public static function carregarPagina(){
+	public static function carregarPagina(){
+		if(isset($_GET['url'])){
+			$url = explode('/',$_GET['url']);
+			if(file_exists('pages/'.$url[0].'.php')){
+				include('pages/'.$url[0].'.php');
+			}else{
+				//P√°gina n√£o existe!
+				header('Location: '.INCLUDE_PATH_PAINEL);
+			}
+		}else{
+			include('pages/home.php');
+		}
+	}
+
+	public static function carregarCartas(){
 		if(isset($_GET['url'])){
 			$url = explode('/',$_GET['url']);
 			if(file_exists('pages/'.$url[0].'.php')){
@@ -26,7 +40,7 @@ class Painel
 				header('Location: '.INCLUDE_PATH_PAINEL);
 			}
 		}else{
-			include('pages/home.php');
+			include('pages/cartas.php');
 		}
 	}
 
@@ -48,8 +62,7 @@ class Painel
 		}else if($tipo == 'erro'){
 			echo '<div class="box-alert erro"><i class="fa fa-times"></i> '.$mensagem.'</div>';
 		}
-	}
-	public static function imagemValida($imagem){
+	} public static function imagemValida($imagem){
 		if($imagem['type'] == 'image/jpeg' ||
 			$imagem['type'] == 'imagem/jpg' ||
 			$imagem['type'] == 'imagem/png'){
@@ -144,14 +157,37 @@ class Painel
 			return $certo;
 		}
 
-		public static function selectAll($tabela){
-			$sql = MySql::conectar()->prepare("SELECT * FROM `$tabela` ");
-			$sql->execute();
+
+		public static function selectA($tabela,$start = null,$end = null){
+				if($start == null && $end == null){
+					$sql = MySql::conectar()->prepare("SELECT * FROM `$tabela`");
+					$sql->execute();
+				}else{
+					$sql = MySql::conectar()->prepare("SELECT * FROM `$tabela` LIMIT $start,$end");
+					$sql->execute();
+				}	
+					return $sql->fetchAll();
+		}
+
+		
+		public static function selectAll($tabela,$start = null,$end = null){
+			if($start == null && $end == null){
+					$sql = MySql::conectar()->prepare("SELECT * FROM `$tabela` ");
+					$sql->execute();
+			}else{
+					$sql = MySql::conectar()->prepare("SELECT * FROM `$tabela` LIMIT $start,$end");
+					$sql->execute();
+			}
+
 			
 			return $sql->fetchAll();
 
 		}
-	}
+		
+
+
+
+}
 
 
 

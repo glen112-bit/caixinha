@@ -58,30 +58,24 @@
 			<div class="w33 left box-especialidade">
 				<h3><i class="fas fa-braille"></i></h3>
 				<h4>Braille</h4>
-				<p>Braile ou braille é  um sistema de escrita tátil utilizado por pessoas cegas ou com baixa
-			 visão. É tradicionalmente escrito em papel relevo. Os usuários do sistema Braille podem ler em telas de
-			 computadores e em outros suportes eletrônicos graças a um mostrador em braile atualizáveis.
-			 Eles podem escrever em braile com reglete e punção, máquina de escrever em braille,[2] notetaker
+				<p>Braile ou braille é  um sistema de escrita tátil utilizado
+			 por pessoas cegas ou com baixa
+			 visão. É tradicionalmente escrito em papel relevo. Os usuários
+			 do sistema Braille podem ler em telas de
+			 computadores e em outros suportes eletrônicos graças a um mostrador 
+			em braile atualizáveis.
+			 Eles podem escrever em braile com reglete e punção, máquina de 
+			escrever em braille,[2] notetaker
 			 em braille ou computadores que imprimem braile em relevo..</p>
 			</div><!--box-especialidade-->
 
 			<div class="w33 left box-especialidade">
 				<h3><i class="fas fa-audio-description"></i></h3>
 				<h4>Audio Descriçao</h4>
-				<?php
-$cartas = Painel::selectAll('tb_admin.cartas')
+ 
+  <?php Painel::carregarCartas(); ?>
 
-?>
-				<div class="w33 left  table">
-<?php foreach ($cartas as $key => $value) {?>
-						<div class="center table">		
-							<div class="id"><?php echo $value['id']; ?></div>
-							<div class="nome"><?php echo $value['nome']; ?></div>
-							<div class="cont"><?php echo $value ['cont']; ?></div>
-							<div class="audio"><audio controls src="<?php echo BASE_DIR_AUDIO.$value['audio'];?>"></audio></td>
-							</div>
-						</div><!--table-->
-<?php   } ?>
+
 					</div><!--content-->
 
 			</div><!--box-especialidade-->
