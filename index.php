@@ -7,14 +7,14 @@
 <head>
 	<title>Accecibilidade fora da Caixinha</title>
   <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/css/css/all.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/style2.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 	<meta name="keywords" content="palavras-chave,do,meu,site">
 	<meta name="description" content="Descrição do meu website">
-	<meta charset="utf-8" />
+	<me a charset="utf-8" />
 </head>
 <body>
 
@@ -135,8 +135,5 @@
 	<script src="<?php echo INCLUDE_PATH; ?>js/map.js"></script>
 <?php  } ?>
 <script src="<?php echo INCLUDE_PATH; ?>js/formularios.js"></script>
-<script src="<?php echo INCLUDE_PATH; ?>cartas.js"></script>
-<script src="<?php echo INCLUDE_PATH; ?>https://code.jquery.com/jquery-3.4.1.min.js"></script>
-
 </body>
 </html>

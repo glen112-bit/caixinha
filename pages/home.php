@@ -67,17 +67,13 @@
 			escrever em braille,[2] notetaker
 			 em braille ou computadores que imprimem braile em relevo..</p>
 			</div><!--box-especialidade-->
-
 			<div class="w33 left box-especialidade">
 				<h3><i class="fas fa-audio-description"></i></h3>
-				<h4>Audio Descriçao</h4>
-
-
+				<h4>Audiodescriçao</h4>
 		<?php
 		$paginaAtual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
 		$porPagina = 1;
 		$cartas = Painel::selectA('tb_admin.cartas',($paginaAtual - 1)*$porPagina, $porPagina );
-
 		?>
 		<div class="box-content">
 			<div class="wraper-table">
@@ -92,34 +88,42 @@
 				<?php   } ?>
 			</div><!--table-->
 							<div class="left audio"><audio controls src="<?php echo BASE_DIR_AUDIO.$value['audio'];?>"></audio></td></div>
-
-			<div class="paginacao">
+<div class="container">
+			<div class="paginacao container">
 		<?
 		$totalPaginas = ceil(count(Painel::selectA('tb_admin.cartas')) / $porPagina);
 
 		for($i = 1; $i <= $totalPaginas; $i++){
 				if($i == $paginaAtual)
-
-					echo '<a class="page-selected" href="'.INCLUDE_PATH.'home?pagina='.$i.'"></a>';
-	
+				 echo'<a class="page-selected" href="'.INCLUDE_PATH.'galeria?pagina='.$i.'"></a>';
 					//	else
-					echo '<a href="'.INCLUDE_PATH.'home?pagina='.$i.'">'.$i.'</a>';
+				echo '<a href="'.INCLUDE_PATH.'home?pagina='.$i.'">'.$i.'</a>';
 					echo '-';
-}
-
-
-
+		}
 		?>
-		
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
 
-	</div><!--nav-paginacao-->
-	</div><!--paginacao-->
+		<li class="page-item"><a class="page-link" <?echo $paginaAtual?>href="#"><?echo $paginaAtual?></a></li>
+    <li class="page-item">
 
-</div><!--wrapp-table-->
-				</div><!--content-->
+		<a class="page-link" href="<?php echo INCLUDE_PATH; ?>home?pagina=" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
 
-			</div><!--box-especialidade-->
-
+</div><!--paginacao-container-->
+	</div><!--comtainer-->
+	</div><!--wraper-table-->
+				</div><!--box-content-->
+			</div><!--especialidad-->
 			<div class="w33 left box-especialidade">
 				<h3><i class="fab fa-js"></i></h3>
 				<h4>Javascript</h4>
@@ -130,7 +134,7 @@
 			</div><!--box-especialidade-->
 		</div><!--center-->
 	 <div class="clear"></div>
-	</section>
+	</section><!--especialidades-->
 		<section class="extras">
 		<div class="center">
 			<div id="depoimentos" class="w50 left depoimentos-container">
