@@ -110,8 +110,6 @@
 
 
 		?>
-<div class="nav-paginacao">
-
 		
 
 	</div><!--nav-paginacao-->
