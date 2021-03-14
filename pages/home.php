@@ -1,4 +1,3 @@
-	<meta charset="UTF-8">
 <section class="banner-container">
 	<div style="background-image: url('<?php echo INCLUDE_PATH; ?>images/bg-form.jpg');"class="banner-single"></div><!--banner-single-->
 	<div style="background-image: url('<?php echo INCLUDE_PATH; ?>images/bg-form2.jpg');"class="banner-single"></div><!--banner-single-->
@@ -62,9 +61,9 @@
 			 por pessoas cegas ou com baixa
 			 visão. É tradicionalmente escrito em papel relevo. Os usuários
 			 do sistema Braille podem ler em telas de
-			 computadores e em outros suportes eletrônicos graças a um mostrador 
+			 computadores e em outros suportes eletrônicos graças a um mostrador
 			em braile atualizáveis.
-			 Eles podem escrever em braile com reglete e punção, máquina de 
+			 Eles podem escrever em braile com reglete e punção, máquina de
 			escrever em braille,[2] notetaker
 			 em braille ou computadores que imprimem braile em relevo..</p>
 			</div><!--box-especialidade-->
@@ -72,11 +71,54 @@
 			<div class="w33 left box-especialidade">
 				<h3><i class="fas fa-audio-description"></i></h3>
 				<h4>Audio Descriçao</h4>
- 
-  <?php Painel::carregarCartas(); ?>
 
 
-					</div><!--content-->
+		<?php
+		$paginaAtual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
+		$porPagina = 1;
+		$cartas = Painel::selectA('tb_admin.cartas',($paginaAtual - 1)*$porPagina, $porPagina );
+
+		?>
+		<div class="box-content">
+			<div class="wraper-table">
+
+				<div class="w33 left  table">
+				<?php foreach ($cartas as $carta => $value) {?>
+						<div id="target" class="center table">
+							<div class="id"><?php echo $value['id']; ?></div>
+							<div class="nome"><?php echo $value['nome']; ?></div>
+							<div class="cont"><?php echo $value ['cont']; ?></div>
+						</div><!--table-->
+				<?php   } ?>
+			</div><!--table-->
+							<div class="left audio"><audio controls src="<?php echo BASE_DIR_AUDIO.$value['audio'];?>"></audio></td></div>
+
+			<div class="paginacao">
+		<?
+		$totalPaginas = ceil(count(Painel::selectA('tb_admin.cartas')) / $porPagina);
+
+		for($i = 1; $i <= $totalPaginas; $i++){
+				if($i == $paginaAtual)
+
+					echo '<a class="page-selected" href="'.INCLUDE_PATH.'home?pagina='.$i.'"></a>';
+	
+					//	else
+					echo '<a href="'.INCLUDE_PATH.'home?pagina='.$i.'">'.$i.'</a>';
+					echo '-';
+}
+
+
+
+		?>
+<div class="nav-paginacao">
+
+		
+
+	</div><!--nav-paginacao-->
+	</div><!--paginacao-->
+
+</div><!--wrapp-table-->
+				</div><!--content-->
 
 			</div><!--box-especialidade-->
 

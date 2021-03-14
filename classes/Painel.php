@@ -26,11 +26,24 @@ class Painel
 				header('Location: '.INCLUDE_PATH_PAINEL);
 			}
 		}else{
-			include('pages/home.php');
+			include('pages/galeria.php');
 		}
 	}
 
-	public static function carregarCartas(){
+	public  function carregarCarta(){
+		if(isset($_GET['url'])){
+			$url = explode('/',$_GET['url']);
+			if(file_exists('pages/'.$url[0].'galeria.php')){
+				include('pages/'.$url[0].'galeria.php');
+			}else{
+				//Página não existe!
+				header('Location: '.INCLUDE_PATH_PAINEL);
+			}
+		}else{
+			include('pages/cartas.php');
+		}
+	}
+	public  function carregarCartas(){
 		if(isset($_GET['url'])){
 			$url = explode('/',$_GET['url']);
 			if(file_exists('pages/'.$url[0].'.php')){
