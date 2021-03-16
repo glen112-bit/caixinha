@@ -1,4 +1,4 @@
-<?php include('config_local.php'); ?>
+<?php include('config_web.php'); ?>
 <?php Site::updateUsuarioOnline();?>
 <?php Site::contador();?>
 

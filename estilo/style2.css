@@ -243,13 +243,13 @@ section.extras {
 }
 .nav-paginacao.audio {
 	position: relative;
-	vertical-align: center;
+	display: flex;
 }
 .servicos-container,
 .depoimentos-container {
 	padding: 0 50px;
 }
-.nav-paginacao input{
+.nav-paginacao input {
 	width: 20px;
 }
 section.extras .title {
@@ -467,6 +467,6 @@ section.erro-404 a {
 		text-decoration: none;
 	}
 	.table .audio {
-	align-items: center;
-}
+		align-items: center;
+	}
 }

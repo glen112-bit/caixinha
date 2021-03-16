@@ -51,7 +51,7 @@
 
 	<section class="especialidades">
 
-		<div id ="galeria" class="center">
+		<div  class="center">
 
 		<h2 class="title">Galeria</h2>
 			<div class="w33 left box-especialidade">
@@ -78,7 +78,7 @@
 		<div class="box-content">
 			<div class="wraper-table">
 
-				<div class="w33 left  table">
+				<div id ="galeria" class="w33 left  table">
 				<?php foreach ($cartas as $carta => $value) {?>
 						<div id="target" class="center table">
 							<div class="id"><?php echo $value['id']; ?></div>
@@ -97,7 +97,7 @@
 				if($i == $paginaAtual)
 				 echo'<a class="page-selected" href="'.INCLUDE_PATH.'galeria?pagina='.$i.'"></a>';
 					//	else
-				echo '<a href="'.INCLUDE_PATH.'home?pagina='.$i.'">'.$i.'</a>';
+				echo '<a href="'.INCLUDE_PATH.'galeria?pagina='.$i.'">'.$i.'</a>';
 					echo '-';
 		}
 		?>
