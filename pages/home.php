@@ -83,25 +83,29 @@
 						<div id="target" class="center table">
 							<div class="id"><?php echo $value['id']; ?></div>
 							<div class="nome"><?php echo $value['nome']; ?></div>
-							<div class="cont"><?php echo $value ['cont']; ?></div>
+							<img class="cont"><?php echo $value ['cont']; ?></img>
 						</div><!--table-->
 				<?php   } ?>
 			</div><!--table-->
 							<div class="left audio"><audio controls src="<?php echo BASE_DIR_AUDIO.$value['audio'];?>"></audio></td></div>
 <div class="container">
-			<div class="paginacao container">
+
+			<div class="paginacao ">
 		<?
 		$totalPaginas = ceil(count(Painel::selectA('tb_admin.cartas')) / $porPagina);
-
 		for($i = 1; $i <= $totalPaginas; $i++){
 				if($i == $paginaAtual)
-				 echo'<a class="page-selected" href="'.INCLUDE_PATH.'galeria?pagina='.$i.'"></a>';
+				 '<a class="page-selected" href="'.INCLUDE_PATH.'galeria?pagina='.$i.'"></a>';
 					//	else
-				echo '<a href="'.INCLUDE_PATH.'galeria?pagina='.$i.'">'.$i.'</a>';
-					echo '-';
+			  	echo '<a href="'.INCLUDE_PATH.'galeria?pagina='.$i.'">'.$i.'</a>';
+					
 		}
 		?>
-<nav aria-label="Page navigation example">
+
+
+
+
+<!--<nav class= "paginador w50 center" aria-label="Page navigation example">
   <ul class="pagination">
     <li class="page-item">
       <a class="page-link" href="#" aria-label="Previous">
@@ -110,19 +114,19 @@
     </li>
 
 		<li class="page-item"><a class="page-link" <?echo $paginaAtual?>href="#"><?echo $paginaAtual?></a></li>
-    <li class="page-item">
+    <li type="text" class="page-item">
 
 		<a class="page-link" href="<?php echo INCLUDE_PATH; ?>home?pagina=" aria-label="Next">
         <span aria-hidden="true">&raquo;</span>
       </a>
     </li>
   </ul>
-</nav>
+</nav>-->
 
 </div><!--paginacao-container-->
-	</div><!--comtainer-->
-	</div><!--wraper-table-->
-				</div><!--box-content-->
+	</div><!--container-->
+   </div><!--wraper-table-->
+	 		</div><!--box-content-->
 			</div><!--especialidad-->
 			<div class="w33 left box-especialidade">
 				<h3><i class="fab fa-js"></i></h3>

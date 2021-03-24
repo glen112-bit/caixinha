@@ -12,7 +12,7 @@
 	spl_autoload_register($autoload);
 
 
-	define('INCLUDE_PATH','http://localhost:8080/php/projecto-caixa/');
+	define('INCLUDE_PATH','http://localhost:8080/caixinha/');
 	define('INCLUDE_PATH_PAINEL',INCLUDE_PATH.'painel/');
 
 	define('BASE_DIR_PAINEL',__DIR__.'/painel/');

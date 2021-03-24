@@ -1,4 +1,4 @@
-<?php include('config_web.php'); ?>
+<?php include('config_local.php'); ?>
 <?php Site::updateUsuarioOnline();?>
 <?php Site::contador();?>
 
@@ -9,19 +9,20 @@
   <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/css/css/all.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="estilo/style2.css">
 	<link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/style2.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 	<meta name="keywords" content="palavras-chave,do,meu,site">
 	<meta name="description" content="Descrição do meu website">
-	<me a charset="utf-8" />
+	<meta charset="utf-8" />
 </head>
 <body>
 
 
 	<?php
 
-  	if(isset($_POST['acao'])){
+  /*	if(isset($_POST['acao'])){
 			//envie el formulario.
 			if($_POST['email'] != ''){
 				$email = $_POST['email'];
@@ -43,7 +44,7 @@
 			}else{
 				echo'<script>alert("campos vacios no son permitidos")</script>';
 			}
-	}
+}*/
 		?>
 
 <base base="<?php echo INCLUDE_PATH; ?>" />
@@ -70,7 +71,7 @@
 	</div><!--overlay-loading-->
 <header>
 		<div class="center">
-			<div class="logo left"><a href="<?php echo INCLUDE_PATH_PAINEL; ?>">Accecibilidade ForadaCaixinha</a></div><!--logo-->
+			<div class="logo left"><h2><a href="<?php echo INCLUDE_PATH_PAINEL; ?>">Accecibilidade ForadaCaixinha</a></h2></div><!--logo-->
 
     	<nav class="desktop right">
 				<ul>

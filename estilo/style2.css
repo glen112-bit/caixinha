@@ -35,6 +35,14 @@ img {
 	padding: 0 10px;
 	width: 50%;
 }
+.w20 {
+	padding: 0 6px;
+	width: 20%;
+}
+.w60 {
+	padding: 0 6px;
+	width: 60%;
+}
 
 .left {
 	float: left;
@@ -225,6 +233,26 @@ section.especialidades h2.title {
 	color: #bababa;
 }
 
+/*Paginacao*/
+
+.paginacao {
+	margin: 20px 0;
+	text-align: center;
+}
+
+.paginacao a {
+	font-size: 14px;
+	margin: 0 8px;
+	display: inline-block;
+	padding: 3px 4px;
+	border: 1px solid #ccc;
+	text-decoration: none;
+	color: #666;
+}
+
+.paginacao a.page-selected {
+	background: rgb(220, 220, 220);
+}
 .box-especialidade p {
 	color: #444;
 	font-size: 15px;
