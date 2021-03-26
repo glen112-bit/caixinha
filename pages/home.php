@@ -7,12 +7,12 @@
 
 	<div class="center">
 
-
+<!--
 		<form method="post">
 			<h2>Qual o seu melhor email?</h2>
 			<input type="email" name="email">
 			<input type="submit" name="acao" value="Cadastrar">
-		</form>
+		</form>-->
 	</div><!--center-->
 		<div class="bullets">
 
@@ -54,20 +54,7 @@
 		<div  class="center">
 
 		<h2 class="title">Galeria</h2>
-			<div class="w33 left box-especialidade">
-				<h3><i class="fas fa-braille"></i></h3>
-				<h4>Braille</h4>
-				<p>Braile ou braille é  um sistema de escrita tátil utilizado
-			 por pessoas cegas ou com baixa
-			 visão. É tradicionalmente escrito em papel relevo. Os usuários
-			 do sistema Braille podem ler em telas de
-			 computadores e em outros suportes eletrônicos graças a um mostrador
-			em braile atualizáveis.
-			 Eles podem escrever em braile com reglete e punção, máquina de
-			escrever em braille,[2] notetaker
-			 em braille ou computadores que imprimem braile em relevo..</p>
-			</div><!--box-especialidade-->
-			<div class="w33 left box-especialidade">
+			<div class=" box-especialidade">
 				<h3><i class="fas fa-audio-description"></i></h3>
 				<h4>Audiodescriçao</h4>
 		<?php
@@ -81,14 +68,18 @@
 				<div id ="galeria" class="w33 left  table">
 				<?php foreach ($cartas as $carta => $value) {?>
 						<div id="target" class="center table">
-							<div class="id"><?php echo $value['id']; ?></div>
+							<div class="id"><?php  $value['id']; ?></div>
 							<div class="nome"><?php echo $value['nome']; ?></div>
-							<img class="cont"><?php echo $value ['cont']; ?></img>
+							<img src=" <?php echo BASE_DIR_AUDIO, $value ['carta']; ?>"</img>
 						</div><!--table-->
 				<?php   } ?>
 			</div><!--table-->
-							<div class="left audio"><audio controls src="<?php echo BASE_DIR_AUDIO.$value['audio'];?>"></audio></td></div>
-<div class="container">
+				<!--	<div class=" audio"><audio controls src="<?php echo BASE_DIR_AUDIO.$value['audio'];?>"></audio></td></div>-->
+				<audio controls>
+					<source src="<?php echo BASE_DIR_AUDIO.$value['audio'];?>" type="audio/ogg">
+					<source src="<?php echo BASE_DIR_AUDIO.$value['audio'];?>" type="audio/mpeg">
+				</audio>
+		<div class="container">
 
 			<div class="paginacao ">
 		<?
@@ -98,7 +89,7 @@
 				 '<a class="page-selected" href="'.INCLUDE_PATH.'galeria?pagina='.$i.'"></a>';
 					//	else
 			  	echo '<a href="'.INCLUDE_PATH.'galeria?pagina='.$i.'">'.$i.'</a>';
-					
+
 		}
 		?>
 
@@ -128,14 +119,7 @@
    </div><!--wraper-table-->
 	 		</div><!--box-content-->
 			</div><!--especialidad-->
-			<div class="w33 left box-especialidade">
-				<h3><i class="fab fa-js"></i></h3>
-				<h4>Javascript</h4>
-				<p>Lorem ipsum dolor sit amet,  consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure consectetur adipisicing elit, sed do eiusmod</p>
-			</div><!--box-especialidade-->
+
 		</div><!--center-->
 	 <div class="clear"></div>
 	</section><!--especialidades-->

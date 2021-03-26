@@ -71,7 +71,7 @@
 	</div><!--overlay-loading-->
 <header>
 		<div class="center">
-			<div class="logo left"><h2><a href="<?php echo INCLUDE_PATH_PAINEL; ?>">Accecibilidade ForadaCaixinha</a></h2></div><!--logo-->
+			<div class="logo left"><strong><h2><a href="<?php echo INCLUDE_PATH_PAINEL; ?>">Accecibilidade ForadaCaixinha</a></h2></strong></div><!--logo-->
 
     	<nav class="desktop right">
 				<ul>
