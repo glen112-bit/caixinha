@@ -1,9 +1,10 @@
 
-<section style="display:none;" class="banner-container">
+<section style="display:none;"  class="banner-container">
 	<div style="background-image: url('<?php echo INCLUDE_PATH; ?>images/bg-form.jpg');"class="banner-single"></div><!--banner-single-->
 	<div style="background-image: url('<?php echo INCLUDE_PATH; ?>images/bg-form2.jpg');"class="banner-single"></div><!--banner-single-->
 
 	<div style="background-image: url('<?php echo INCLUDE_PATH; ?>images/bg-form3.jpg');"class="banner-single"></div><!--banner-single-->
+	<div class="overlay"></div><!--overlay-->
 
 	<div class="center">
 
@@ -22,26 +23,25 @@
 	<section class="descricao-autor">
 		<div class="center">
 			<div class="w50 left">
-				<h2>Livro:</h2>
-				<h2>Acessibilidade fora da Caixinha</h2>
+				<h2>Darthi Alves</h2>
 				<p>
-			Acessibilidade não é só ter uma rampa de acesso, pequeno vagalume!!!
-			Vai muito além: é um nome abrangente que envolve diversas formas de promover
-			acesso através das tecnologias assistivas (que são produtos, serviços e
-			equipamentos que auxiliam a pessoa com deficiência conforme as suas necessidades.
-			Como exemplo: as bengalas para deficientes visuais, placas de comunicação alternativa
-			para quem perde a fala, muletas para locomoção...).
-				<br>
-				Como muito do preconceito que as "pessoas sem deficiências" praticam às pessoas com deficiências
-			é por falta de informação,  criei este baralho com perguntas norteadores para ampliar o pensamento
-			daqueles que enxergam, andam, escutam perfeitamente... "Bater papo" sobre inclusão social e
-			acessibilidade em todos os seus âmbitos: comunicacional, metodológica, arquitetônica, instrumental,
-			digital  e atitudinal.  Já que muitas dessas barreiras, é a própria sociedade que impõe,
-			a deficiência está presente mais no ambiente, do que na própria pessoa.ue envolve diversas formas de promover
-
+					Acessibilidade não é só ter uma rampa de acesso, pequeno vagalume!!!
+					Vai muito além: é um nome abrangente que envolve diversas formas de promover
+					acesso através das tecnologias assistivas (que são produtos, serviços e
+					equipamentos que auxiliam a pessoa com deficiência conforme as suas necessidades.
+					Como exemplo: as bengalas para deficientes visuais, placas de comunicação alternativa
+					para quem perde a fala, muletas para locomoção...).
+						<br>
+						Como muito do preconceito que as "pessoas sem deficiências" praticam às pessoas com deficiências
+					é por falta de informação,  criei este baralho com perguntas norteadores para ampliar o pensamento
+					daqueles que enxergam, andam, escutam perfeitamente... "Bater papo" sobre inclusão social e
+					acessibilidade em todos os seus âmbitos: comunicacional, metodológica, arquitetônica, instrumental,
+					digital  e atitudinal.  Já que muitas dessas barreiras, é a própria sociedade que impõe,
+					a deficiência está presente mais no ambiente, do que na própria pessoa.ue envolve diversas formas de promover
 
 	</p>
-</div>
+
+	</div>
 			<div class="w50 left">
 				<img class="right" src="<?php echo INCLUDE_PATH; ?>images/foto.png">
 			</div>
@@ -50,14 +50,14 @@
 	</section><!--descricao-autor-->
 <div class="clear"></div>
 
-	<section style="display:none" class="especialidades">
+	<section  class="especialidades">
 
 		<div  class="center">
 
 		<h2 class="title">Galeria</h2>
 			<div class=" box-especialidade">
 				<h3><i class="fas fa-audio-description"></i></h3>
-				<h4>Audiodescriçao</h4>
+				<h4>Audiodescri&ccedil;ao</h4>
 		<?php
 		$paginaAtual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
 		$porPagina = 1;
@@ -122,8 +122,6 @@
 		</div><!--center-->
 	 <div class="clear"></div>
 	</section><!--especialidades-->
-		<section class="extras">
-
 
 		<section class="extras">
 		<div class="center">
@@ -157,7 +155,7 @@
 			</div><!--w50-->
 
 			<div id="servicos" class="w50 left servicos-container">
-				<h2 class="title">Servi&ccedil;os</h2>
+				<h2 class="title">ServiÃ§os</h2>
 				<div class="servicos">
 					<ul>
 						<li>Lorem ipsum dolor sit amet,  consectetur adipisicing elit, sed do eiusmod

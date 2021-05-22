@@ -71,15 +71,15 @@
 	</div><!--overlay-loading-->
 <header>
 		<div class="center">
-			<div class="logo left"><strong><h2><a href="<?php echo INCLUDE_PATH_PAINEL; ?>">Accecibilidade ForadaCaixinha</a></h2></strong></div><!--logo-->
+			<div class="logo left"><strong><h2><a href="#""<?php echo INCLUDE_PATH_PAINEL; ?>">oMundo<//>da<//>Darthi</a></h2></strong></div><!--logo-->
 
     	<nav class="desktop right">
 				<ul>
-					<li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
-					<li><a href="<?php echo INCLUDE_PATH; ?>galeria">Galeria</a></li>
+					<li><a class="home" href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
+<!--					<li><a href="<?php echo INCLUDE_PATH; ?>galeria">Galeria</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
-					<li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+-->					<li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
 				</ul>
 			</nav>
 			 <nav class="mobile right">
@@ -88,10 +88,10 @@
 			 	</div>
 				<ul>
 					<li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
-					<li><a href="<?php echo INCLUDE_PATH; ?>galeria">Galeria</a></li>
+	<!--				<li><a href="<?php echo INCLUDE_PATH; ?>galeria">Galeria</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
-					<li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+ -->					<li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
 				</ul>
 			</nav>
      <div class="clear"></div>
@@ -109,7 +109,7 @@
 				$pagina404 = true;
 				include('pages/404.php');
 			}else{
-				include('pages/home.php');
+				include('pages/clean.php');
 			}
 		}
 
@@ -120,6 +120,10 @@
 		<div class="center">
 			<p>Todos os direitos reservados</p>
 		</div><!--center-->
+<button class="button">
+	 <a href="https://www.loja.omundodadarthi.com.br" target="_blank"><i class="fas fa-cart-plus"></i></a>
+</button><!--button-->
+
 	</footer>
 
 	<script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
