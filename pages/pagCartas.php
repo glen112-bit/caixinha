@@ -23,8 +23,9 @@
 			</div><!--table-->
 				<!--	<div class=" audio"><audio controls src="<?php echo BASE_DIR_AUDIO.$value['audio'];?>"></audio></td></div>-->
 				<audio controls>
-					<source src="<?php echo BASE_DIR_AUDIO.$value['audio'];?>" type="audio/ogg">
-					<source src="<?php echo BASE_DIR_AUDIO.$value['audio'];?>" type="audio/mpeg">
+					<source src="<?php echo BASE_DIR_AUDIO_CARTAS.$value['audio'];?>" type="audio/mp3">
+					<source src="<?php echo BASE_DIR_AUDIO_CARTAS.$value['audio'];?>" type="audio/ogg">
+					<source src="<?php echo BASE_DIR_AUDIO_CARTAS.$value['audio'];?>" type="audio/mpeg">
 				</audio>
 		<div class="container">
 

@@ -22,7 +22,7 @@
 
 	<?php
 
-  /*	if(isset($_POST['acao'])){
+  /*if(isset($_POST['acao'])){
 			//envie el formulario.
 			if($_POST['email'] != ''){
 				$email = $_POST['email'];
@@ -71,7 +71,7 @@
 	</div><!--overlay-loading-->
 <header>
 		<div class="center">
-			<div class="logo left"><strong><h2><a href="#""<?php echo INCLUDE_PATH_PAINEL; ?>">oMundo<//>da<//>Darthi</a></h2></strong></div><!--logo-->
+			<div class="desktop logo left"><strong><h2><a  href="#""<?php echo INCLUDE_PATH_PAINEL; ?>"><p>oMundo<p>da<p>Darthi</p></a></h2></strong></div><!--logo-->
 
     	<nav class="desktop right">
 				<ul>

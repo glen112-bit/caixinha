@@ -4,21 +4,23 @@
   box-sizing: border-box;
   font-family: "Open Sans";
 }
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 /**Boot CSS**/
-:root{
+:root {
   --titleColor: rgb(255, 255, 255);
-  --textColor:rgb(255, 255, 255);
-  --backColor:rgb(39, 182, 204);
+  --textColor: rgb(255, 255, 255);
+  --backColor: rgb(39, 182, 204);
   --headerColor: rgb(214, 23, 173);
   --footerColor: rgb(49, 52, 98);
-  --extrasColor:rgb(64, 69, 128);
+  --extrasColor: rgb(64, 69, 128);
+  --titleMobileSize: 28px;
+  --titleDesktopSize: 38px;
 }
 html,
 body {
   height: 100%;
 }
-body{
+body {
   background-color: rgb(39, 182, 204);
 }
 input {
@@ -99,20 +101,18 @@ img {
 header {
   padding: 20px 0;
   /*background-color: rgb(255, 232, 0);
-*/background-color: var(--headerColor);
+*/
+  background-color: var(--headerColor);
   padding-left: 5rem;
 }
-header.logo {
-  font-size: 25px;
 
-  text-transform: uppercase;
-  color: rgb(0, 0, 255);
-}
 .logo a {
   text-decoration: none;
   color: var(--titleColor);
+  display: flex;
+  text-align: center;
   font-weight: bold;
-  font-size:38px;
+  font-size: var(..titleDesktopSize);
 }
 
 .mobile {
@@ -141,7 +141,7 @@ nav.desktop a:hover {
 }
 header nav ul {
   width: 21rem;
-  align-items:center;
+  align-items: center;
 }
 section.banner-container {
   width: 100%;
@@ -215,7 +215,7 @@ section.descricao-autor {
 section.descricao-autor h2 {
   font-size: 32px;
   font-weight: bold;
-  color: var(--titleColor)
+  color: var(--titleColor);
 }
 
 section.descricao-autor p {
@@ -340,11 +340,10 @@ p.nome-autor {
 }
 
 footer {
-  background: var( --footerColor);
+  background: var(--footerColor);
   padding: 10px 0;
   display: flex;
   flex-direction: column;
-
 }
 footer.fixed {
   position: fixed;
@@ -502,14 +501,26 @@ section.erro-404 a {
   }
 }
 @media screen and (max-width: 700px) {
+  header {
+    padding: 0 auto;
+  }
   nav.desktop {
     display: none;
   }
 
   nav.mobile {
-    display: block;
+    display: flex;
   }
-
+div.desktop.logo{
+  float: none;
+  text-align: center;
+}
+  .logo a {
+    font-size: var(--titleMobileSize);
+    margin: 0 auto;
+    /*  float:none;
+*/
+  }
   .botao-menu-mobile {
     font-size: 24px;
     cursor: pointer;
