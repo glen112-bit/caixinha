@@ -17,6 +17,7 @@
 
 	define('BASE_DIR_PAINEL',__DIR__.'/painel/');
 	define('BASE_DIR_AUDIO',INCLUDE_PATH.'cartas/');
+	define('BASE_DIR_AUDIO_CARTAS',INCLUDE_PATH.'audio/cartas/');
   //conectar con banco de datos
 	define('HOST','localhost');
 	define('USER','root');
