@@ -12,7 +12,7 @@
 	spl_autoload_register($autoload);
 
 
-	define('INCLUDE_PATH','http://localhost/omundo/');
+	define('INCLUDE_PATH','http://localhost/caixinha/');
 	define('INCLUDE_PATH_PAINEL',INCLUDE_PATH.'painel/');
 
 	define('BASE_DIR_PAINEL',__DIR__.'/painel/');
@@ -22,7 +22,7 @@
 	define('HOST','localhost');
 	define('USER','root');
 	define('PASSWORD','');
-	define('DATABASE','admin_caixa');
+	define('DATABASE','caixa');
 
 
 	//funciones

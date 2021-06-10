@@ -76,7 +76,8 @@
 				<?php   } ?>
 			</div><!--table-->
 				<!--	<div class=" audio"><audio controls src="<?php echo BASE_DIR_AUDIO.$value['audio'];?>"></audio></td></div>-->
-				<audio controls>
+			  <audio controls>
+					<source src="<?php echo BASE_DIR_AUDIO_CARTAS.$value['audio'];?>" type="audio/mp3">
 					<source src="<?php echo BASE_DIR_AUDIO_CARTAS.$value['audio'];?>" type="audio/ogg">
 					<source src="<?php echo BASE_DIR_AUDIO_CARTAS.$value['audio'];?>" type="audio/mpeg">
 				</audio>
@@ -122,7 +123,7 @@
 		</div><!--center-->
 	 <div class="clear"></div>
 	</section><!--especialidades-->
-	
+
 
 
 		<section class="extras">
