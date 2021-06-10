@@ -77,6 +77,7 @@
 			</div><!--table-->
 				<!--	<div class=" audio"><audio controls src="<?php echo BASE_DIR_AUDIO.$value['audio'];?>"></audio></td></div>-->
 				<audio controls>
+					<source src="<?php echo BASE_DIR_AUDIO_CARTAS.$value['audio'];?>" type="audio/mp3">
 					<source src="<?php echo BASE_DIR_AUDIO_CARTAS.$value['audio'];?>" type="audio/ogg">
 					<source src="<?php echo BASE_DIR_AUDIO_CARTAS.$value['audio'];?>" type="audio/mpeg">
 				</audio>
@@ -136,36 +137,12 @@
 						consequat.	</p>
 					<p class="nome-autor">Lorem ipsum</p>
 				</div><!--depoimento-single-->
-				<div class="depoimento-single">
-					<p class="depoimento-descricao">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.	</p>
-					<p class="nome-autor">Lorem ipsum</p>
-				</div><!--depoimento-single-->
-				<div class="depoimento-single">
-					<p class="depoimento-descricao">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.</p>
-					<p class="nome-autor">Lorem ipsum</p>
-				</div><!--depoimento-single-->
 			</div><!--w50-->
 
 			<div id="servicos" class="w50 left servicos-container">
-				<h2 class="title">ServiÃ§os</h2>
+				<h2 class="title">Servi&ccedil;os</h2>
 				<div class="servicos">
 					<ul>
-						<li>Lorem ipsum dolor sit amet,  consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure consectetur adipisicing elit.</li>
-						<li>Lorem ipsum dolor sit amet,  consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure consectetur adipisicing elit.</li>
 						<li>Lorem ipsum dolor sit amet,  consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
