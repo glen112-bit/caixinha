@@ -15,9 +15,10 @@
 	define('INCLUDE_PATH','http://omundodadarthi.com.br/');
 	define('INCLUDE_PATH_PAINEL',INCLUDE_PATH.'painel/');
 
-	define('BASE_DIR_PAINEL',__DIR__.'/painel');
-  define('BASE_DIR_AUDIO',INCLUDE_PATH.'cartas/');
-  define('BASE_DIR_AUDIO_CARTAS',INCLUDE_PATH.'audio/cartas/');
+  define('BASE_DIR_PAINEL',__DIR__.'/painel/');
+	define('BASE_DIR_AUDIO',INCLUDE_PATH.'cartas/');
+	define('BASE_DIR_AUDIO_CARTAS',INCLUDE_PATH.'audio/cartas/');
+	define('BASE_DIR_AUDIO_CARTAS_MP3',INCLUDE_PATH.'audio/cartas/mp3/');
   //conectar con banco de datos
 	define('HOST','localhost');
 	define('USER','admin_caixa');
