@@ -111,6 +111,14 @@ include('config_local.php');
 
 	</header>
 <div id="home" class="container-principal">
+	<section class="imagenFondo">
+		<figure>
+			<img src="<?php echo INCLUDE_PATH; ?>images/WhatsApp Image 2021-05-06 at 12.45.01 copia.jpg">
+				<figcaption>
+					imagen de fondo
+				</figcaption>
+		</figure>
+	</section>
 <?php
 
 		if(file_exists('pages/'.$url.'.php')){

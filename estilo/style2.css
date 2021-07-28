@@ -16,6 +16,9 @@
   --titleMobileSize: 28px;
   --titleDesktopSize: 38px;
 }
+figcaption{
+  opacity:0;
+}
 html,
 body {
   height: 100%;
@@ -174,6 +177,16 @@ section.banner-container {
   z-index: 1;
   background-color: rgba(51, 51, 51, 0.6);
 }
+section.imagenFondo{
+  display:flex;
+  justify-content:center;
+  padding:2rem;
+  width:100%;
+}
+   section.imagenFondo img{
+   width: 100%; 
+   zoom:1.50;
+  }
 section.banner-container form {
   width: 98%;
   max-width: 500px;
