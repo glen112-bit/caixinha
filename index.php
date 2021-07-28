@@ -1,6 +1,6 @@
 <?php 
-//include('config_local.php');
-include('config_web_com.php');
+include('config_local.php');
+//include('config_web_com.php');
  ?>
 <?php Site::updateUsuarioOnline();?>
 <?php Site::contador();?>
@@ -99,10 +99,11 @@ include('config_web_com.php');
 			</nav>
      <div class="clear"></div>
 		</div><!--center-->
+<hr class="desktop">
 <section class="desktop loja link">
 	<div class="desktop loja ">
 			<div desktop  >Vamos pra Loja</div>
-		<button class=" desktop button">
+		<button class=" desktop ">
 			 <a href="https://omundodadarthi.lojaintegrada.com.br" target="_blank"><i class="fas fa-cart-plus"></i></a>
 		</button><!--button-->
 	</div><!--center-->
@@ -130,7 +131,6 @@ include('config_web_com.php');
 <footer <?php if(isset($pagina404) && $pagina404 == true) echo 'class="fixed"'; ?>>
 		<div class="center">
 			<p>Todos os direitos reservados</p>
-			<p>Loja</p>
 		</div><!--center-->
 <button class="button">
 	 <a href="https://omundodadarthi.lojaintegrada.com.br" target="_blank"><i class="fas fa-cart-plus"></i></a>

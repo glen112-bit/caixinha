@@ -29,6 +29,7 @@ input {
 img {
   width: 100%;
   max-width: 400px;
+  border-radius:1.50rem;
 }
 
 .center {
@@ -100,10 +101,7 @@ img {
 }
 header {
   padding: 20px 0;
-  /*background-color: rgb(255, 232, 0);
-*/
   background-color: var(--headerColor);
-  padding-left: 5rem;
 }
 header > section.loja{
   display:flex;
@@ -351,6 +349,7 @@ footer {
   padding: 10px 0;
   display: flex;
   flex-direction: column;
+  padding-right: 5%;
 }
 footer.fixed {
   position: fixed;
@@ -487,7 +486,7 @@ section.erro-404 a {
   header {
     padding: 0 auto;
   }
-  nav.desktop {
+  nav.desktop, header hr {
     display: none;
   }
 
@@ -546,6 +545,7 @@ div.desktop.logo{
     float: none !important;
     display: block;
     margin: 0 auto;
+    border-radius: 1.15rem;
   }
   header {
     padding-left: 0;
