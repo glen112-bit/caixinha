@@ -105,6 +105,13 @@ header {
   background-color: var(--headerColor);
   padding-left: 5rem;
 }
+header > section.loja{
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  color: white;
+  margin-right: 5%;
+}
 
 .logo a {
   text-decoration: none;
@@ -439,7 +446,7 @@ section.erro-404 a {
 }
 
 .contato-container input[type="submit"] {
-  background: #00c59e;
+  background: var(--headerColor);
   width: 140px;
   height: 40px;
   color: white;
@@ -475,31 +482,7 @@ section.erro-404 a {
   text-align: center;
   border-collapse: collapse;
 }
-@media screen and (max-width: 768px) {
-  img {
-    float: none !important;
-    display: block;
-    margin: 0 auto;
-  }
-  header {
-    padding-left: 0;
-  }
 
-  .w50 {
-    padding: 20px;
-    width: 100%;
-  }
-
-  .w33 {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .box-especialidade {
-    padding: 40px 20px;
-    margin: 0;
-  }
-}
 @media screen and (max-width: 700px) {
   header {
     padding: 0 auto;
@@ -553,5 +536,33 @@ div.desktop.logo{
   }
   .table .audio {
     align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  header > section.loja{
+  display:none;
+  }
+  img {
+    float: none !important;
+    display: block;
+    margin: 0 auto;
+  }
+  header {
+    padding-left: 0;
+  }
+
+  .w50 {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .w33 {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .box-especialidade {
+    padding: 40px 20px;
+    margin: 0;
   }
 }

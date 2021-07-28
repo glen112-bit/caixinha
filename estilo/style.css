@@ -50,7 +50,7 @@ img{
 
 
 
-/**Estilização do site**/
+/**EstilizaÔøΩÔøΩo do site**/
 
 .sucesso{
 	display: none;
@@ -151,7 +151,7 @@ section.banner-container{
 	width: 100%;
 	height: 100%;
 	z-index: 2;
-	background-color: rgba(51,51,51,0.7); 
+	background-color: rgba(51,51,51,0.7);
 }
 
 section.banner-container form{
@@ -281,7 +281,7 @@ p.nome-autor{
 
 .servicos ul{
 	margin:20px 0;
-	
+
 }
 
 .servicos li{
@@ -384,7 +384,7 @@ section.erro-404 a{
 }
 
 .contato-container input[type=submit]{
-	background: #00C59E;
+	background: var(--headerColor);
 	width: 140px;
 	height: 40px;
 	color: white;
@@ -429,7 +429,7 @@ section.erro-404 a{
 		width: 100%;
 		padding: 20px;
 	}
-	
+
 	.box-especialidade{
 		padding:40px 20px;
 		margin: 0;

@@ -1,4 +1,7 @@
-<?php include('config_web_com.php'); ?>
+<?php 
+//include('config_local.php');
+include('config_web_com.php');
+ ?>
 <?php Site::updateUsuarioOnline();?>
 <?php Site::contador();?>
 
@@ -6,10 +9,10 @@
 <html>
 <head>
 	<title>Accecibilidade fora da Caixinha</title>
+	<link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/reset.css">
   <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/css/css/all.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="estilo/style2.css">
 	<link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/style2.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -96,8 +99,16 @@
 			</nav>
      <div class="clear"></div>
 		</div><!--center-->
-	</header>
+<section class="desktop loja link">
+	<div class="desktop loja ">
+			<div desktop  >Vamos pra Loja</div>
+		<button class=" desktop button">
+			 <a href="https://omundodadarthi.lojaintegrada.com.br" target="_blank"><i class="fas fa-cart-plus"></i></a>
+		</button><!--button-->
+	</div><!--center-->
+</section>
 
+	</header>
 <div id="home" class="container-principal">
 <?php
 
@@ -119,9 +130,10 @@
 <footer <?php if(isset($pagina404) && $pagina404 == true) echo 'class="fixed"'; ?>>
 		<div class="center">
 			<p>Todos os direitos reservados</p>
+			<p>Loja</p>
 		</div><!--center-->
 <button class="button">
-	 <a href="https://www.loja.omundodadarthi.com.br" target="_blank"><i class="fas fa-cart-plus"></i></a>
+	 <a href="https://omundodadarthi.lojaintegrada.com.br" target="_blank"><i class="fas fa-cart-plus"></i></a>
 </button><!--button-->
 
 	</footer>
