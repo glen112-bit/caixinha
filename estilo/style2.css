@@ -113,7 +113,9 @@ header > section.loja{
   color: white;
   margin-right: 5%;
 }
-
+div button.desktop{
+  border-radius:0;
+}
 .logo a {
   text-decoration: none;
   color: var(--titleColor);
