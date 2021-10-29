@@ -1,6 +1,6 @@
-<?php 
-include('config_local.php');
-//include('config_web_com.php');
+<?php
+//include('config_local.php');
+include('config_web_com.php');
  ?>
 <?php Site::updateUsuarioOnline();?>
 <?php Site::contador();?>
@@ -9,8 +9,8 @@ include('config_local.php');
 <html>
 <head>
 	<title>Accecibilidade fora da Caixinha</title>
-	<link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/reset.css">
-  <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/css/css/all.css">
+<!--	<link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/reset.css">
+-->  <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/css/css/all.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/style2.css">
@@ -72,7 +72,7 @@ include('config_local.php');
 	<div class="overlay-loading">
 		<img src="<?php echo INCLUDE_PATH ?>images/ajax-loader.gif" />
 	</div><!--overlay-loading-->
-<header>
+<header style="padding-left:0rem">
 		<div class="center">
 			<div class="desktop logo left"><strong><h2><a  href="#""<?php echo INCLUDE_PATH_PAINEL; ?>"><p>oMundo<p>da<p>Darthi</p></a></h2></strong></div><!--logo-->
 
@@ -100,9 +100,9 @@ include('config_local.php');
      <div class="clear"></div>
 		</div><!--center-->
 <hr class="desktop">
-<section class="desktop loja link">
+<section style="text-align:center" class="desktop loja link">
 	<div class="desktop loja ">
-			<div desktop  >Vamos pra Loja</div>
+			<div style="color:white" class="desktop">Vamos pra Loja</div>
 		<button class=" desktop ">
 			 <a href="https://omundodadarthi.lojaintegrada.com.br" target="_blank"><i class="fas fa-cart-plus"></i></a>
 		</button><!--button-->

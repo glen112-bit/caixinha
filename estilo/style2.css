@@ -34,7 +34,9 @@ img {
   max-width: 400px;
   border-radius:1.50rem;
 }
-
+header {
+  padding-left: 0rem;
+}
 .center {
   max-width: 1280px;
   padding: 0 12%;
@@ -105,6 +107,7 @@ img {
 header {
   padding: 20px 0;
   background-color: var(--headerColor);
+  text-align: center;
 }
 header > section.loja{
   display:flex;
@@ -168,6 +171,9 @@ section.banner-container {
   height: 100%;
   background-size: cover;
   background-position: center;
+}
+.desktop{
+  color: white;
 }
 
 .overlay {
@@ -563,7 +569,7 @@ div.desktop.logo{
     border-radius: 1.15rem;
   }
   header {
-    padding-left: 0;
+    padding-left: 0rem;
   }
 
   .w50 {
