@@ -1,6 +1,7 @@
 <?php
 //include('config_local.php');
-include('config_web_com.php');
+//include('config_web_com.php');
+include('config_web.php');
  ?>
 <?php Site::updateUsuarioOnline();?>
 <?php Site::contador();?>

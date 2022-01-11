@@ -4,8 +4,8 @@
   date_default_timezone_set('America/Sao_Paulo');
 	$autoload = function($class){
 	if($class == 'Email'){
-/*			include('classes/PHPMailer/PHPMailerAutoload.php');
- */	}
+			include('classes/PHPMailer/PHPMailerAutoload.php');
+ 	}
 		include('classes/'.$class.'.php');
 	};
 
@@ -21,9 +21,9 @@
 	define('BASE_DIR_AUDIO_CARTAS_MP3',INCLUDE_PATH.'audio/cartas/mp3/');
   //conectar con banco de datos
 	define('HOST','localhost');
-	define('USER','admin_caixa');
+	define('USER','admin_omundo');
 	define('PASSWORD','121212');
-	define('DATABASE','admin_caixa');
+	define('DATABASE','admin_omundo');
 
 	//funciones
 	define('NOME_EMPRESA','Glen/Code');
