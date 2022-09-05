@@ -13,7 +13,7 @@
 	spl_autoload_register($autoload);
 
 
-	define('INCLUDE_PATH','https://vercel.com/glen1986/caixinha/8psfkgBhUUKuame3W4ni6C3Lm6CG');
+	define('INCLUDE_PATH','https://caixinha-tau.vercel.app');
 	define('INCLUDE_PATH_PAINEL',INCLUDE_PATH.'painel/');
 
 	define('BASE_DIR_PAINEL',__DIR__.'/painel/');
