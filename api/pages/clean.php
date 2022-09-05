@@ -84,7 +84,7 @@
 		<div class="container">
 
 			<div class="paginacao ">
-		<?
+<?php
 		$totalPaginas = ceil(count(Painel::selectA('tb_admin.cartas')) / $porPagina);
 		for($i = 1; $i <= $totalPaginas; $i++){
 				if($i == $paginaAtual)
