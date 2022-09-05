@@ -1,7 +1,22 @@
+
 <?php
-//include('config_local.php');
-include('config_vercel.php');
- ?>
+include('config.php');
+?>
+
+ <?php
+// $myUrl = $_GET['url'];
+// echo $myUrl;
+// if($myUrl == 'http://localhost/caixinha/api/'){
+	// include('config_local.php');
+// } else if( $myUrl == 'https://caixinha-tau.vercel.app' ){
+	// include('config_vercel.php');
+// }else {
+	// include('config_web.php');
+// }
+//
+// ?>
+
+
 <?php Site::updateUsuarioOnline();?>
 <?php Site::contador();?>
 
