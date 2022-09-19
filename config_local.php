@@ -12,7 +12,7 @@
 	spl_autoload_register($autoload);
 
 
-	define('INCLUDE_PATH','http://192.168.64.2/caixinha/');
+	define('INCLUDE_PATH','http://localhost/caixa/');
 	define('INCLUDE_PATH_PAINEL',INCLUDE_PATH.'painel/');
 
 	define('BASE_DIR_PAINEL',__DIR__.'/painel/');
@@ -24,6 +24,7 @@
 	define('USER','root');
 	define('PASSWORD','');
 	define('DATABASE','admin_caixa');
+
 
 
 	//funciones
@@ -58,3 +59,4 @@
 		}
 	}
 ?>
+

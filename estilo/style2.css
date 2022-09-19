@@ -125,7 +125,7 @@ div button.desktop{
   display: flex;
   text-align: center;
   font-weight: bold;
-  font-size: var(..titleDesktopSize);
+  font-size: var(--titleDesktopSize);
 }
 
 .mobile {
@@ -281,6 +281,12 @@ section.especialidades h2.title {
 
 /*Paginacao*/
 
+.nav-pagination {
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+}
 .paginacao {
   margin: 20px 0;
   text-align: center;
@@ -318,10 +324,10 @@ section.extras {
   width: 100%;
   max-height: auto;
 }
-.nav-paginacao.audio {
-  position: relative;
-  display: flex;
-}
+/* .nav-paginacao.audio { */
+  /* position: relative; */
+  /* display: flex; */
+/* } */
 .servicos-container,
 .depoimentos-container {
   padding: 0 50px;
