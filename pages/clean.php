@@ -84,6 +84,21 @@
 		<div class="container">
 
 			<div class="paginacao ">
+<div class="center">
+	<nav class= "paginador w50 center" aria-label="Page navigation example">
+			<ul style="justify-content: center;" class="pagination">
+			<li class="page-item"><a class="page-link" href="<?php INCLUDE_PATH ?>galeria?pagina=<?php echo $paginaAtual -1 ?>" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+					</li>
+
+					<li class="page-item"><a class="page-link" <?php echo $paginaAtual?>href="#"><?php echo $paginaAtual?></a>
+					</li>
+
+					<li type="text" class="page-item"><a class="page-link" href="<?php echo INCLUDE_PATH; ?>galeria?pagina=<?php echo $paginaAtual+1 ?>" aria-label="Next">
+													<span aria-hidden="true">&raquo;</span></a>
+					</li>
+			</ul>
+	</nav>
+</div>
 <?php
 		$totalPaginas = ceil(count(Painel::selectA('tb_admin.cartas')) / $porPagina);
 		for($i = 1; $i <= $totalPaginas; $i++){
@@ -97,22 +112,6 @@
 
 
 
-
-<!--<nav class= "paginador w50 center" aria-label="Page navigation example">
-  <ul class="pagination">
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-		<li class="page-item"><a class="page-link" <?echo $paginaAtual?>href="#"><?echo $paginaAtual?></a></li>
-    <li type="text" class="page-item">
-		<a class="page-link" href="<?php echo INCLUDE_PATH; ?>home?pagina=" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>-->
 
 </div><!--paginacao-container-->
 	</div><!--container-->
