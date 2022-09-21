@@ -58,11 +58,11 @@
 			<div class=" box-especialidade">
 				<h3><i class="fas fa-audio-description"></i></h3>
 				<h4>Audiodescri&ccedil;ao</h4>
-		<?php
-		$paginaAtual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
-		$porPagina = 1;
-		$cartas = Painel::selectA('tb_admin.cartas',($paginaAtual - 1)*$porPagina, $porPagina );
-		?>
+<?php
+$paginaAtual = isset($_GET['pagina']) ? (int)$_GET['pagina'] : 1;
+$porPagina = 1;
+$cartas = Painel::selectA('tb_admin.cartas',($paginaAtual - 1)*$porPagina, $porPagina );
+?>
 		<div class="box-content">
 			<div class="wraper-table">
 
@@ -86,37 +86,45 @@
 			<div class="paginacao ">
 <div class="center">
 	<nav class= "paginador w50 center" aria-label="Page navigation example">
-			<ul style="justify-content: center;" class="pagination">
-			<li class="page-item"><a class="page-link" href="<?php INCLUDE_PATH ?>galeria?pagina=<?php echo $paginaAtual -1 ?>" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-					</li>
+		<ul style="justify-content: center;" class="pagination">
+			<li class="page-item">
+				<a class="flecha" href="<?php INCLUDE_PATH ?>galeria?pagina=<?php echo $paginaAtual - 1 ?>">
+					<span aria-hidden="true">&laquo;</span>
+				</a>
+			</li>
 
-					<li class="page-item"><a class="page-link" <?php echo $paginaAtual?>href="#"><?php echo $paginaAtual?></a>
-					</li>
+			<li class="page-item">
+				<a class="" <?php echo $paginaAtual?>href="#">
+					<?php echo $paginaAtual?>
+				</a>
+			</li>
 
-					<li type="text" class="page-item"><a class="page-link" href="<?php echo INCLUDE_PATH; ?>galeria?pagina=<?php echo $paginaAtual+1 ?>" aria-label="Next">
-													<span aria-hidden="true">&raquo;</span></a>
-					</li>
-			</ul>
+			<li type="text" class="page-item">
+				<a class=" flecha" href="<?php echo INCLUDE_PATH; ?>galeria?pagina=<?php echo $paginaAtual + 1 ?>">
+					<span aria-hidden="true">&raquo;</span>
+				</a>
+			</li>
+		</ul>
 	</nav>
 </div>
 <?php
-		$totalPaginas = ceil(count(Painel::selectA('tb_admin.cartas')) / $porPagina);
-		for($i = 1; $i <= $totalPaginas; $i++){
-				if($i == $paginaAtual)
-				 '<a class="page-selected" href="'.INCLUDE_PATH.'galeria?pagina='.$i.'"></a>';
-					//	else
-			  	echo '<a href="'.INCLUDE_PATH.'galeria?pagina='.$i.'">'.$i.'</a>';
+$totalPaginas = ceil(count(Painel::selectA('tb_admin.cartas')) / $porPagina);
+for($i = 1; $i <= $totalPaginas; $i++){
+	if($i == $paginaAtual)
+		'<a class="page-selected page-link" href="'.INCLUDE_PATH.'galeria?pagina='.$i.'"></a>';
+	//	else
+	echo '<a href="'.INCLUDE_PATH.'galeria?pagina='.$i.'">'.$i.'</a>';
 
-		}
-		?>
+}
+?>
 
 
 
 
 </div><!--paginacao-container-->
 	</div><!--container-->
-   </div><!--wraper-table-->
-	 		</div><!--box-content-->
+	 </div><!--wraper-table-->
+			</div><!--box-content-->
 			</div><!--especialidad-->
 
 		</div><!--center-->
