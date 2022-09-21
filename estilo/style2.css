@@ -125,7 +125,7 @@ div button.desktop{
   display: flex;
   text-align: center;
   font-weight: bold;
-  font-size: var(..titleDesktopSize);
+  font-size: var(--titleDesktopSize);
 }
 
 .mobile {
@@ -503,7 +503,7 @@ section.erro-404 a {
   border-collapse: collapse;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   header {
     padding: 0 auto;
   }
@@ -554,6 +554,13 @@ div.desktop.logo{
     color: #444;
     text-decoration: none;
   }
+    img {
+    float: none !important;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.85rem;
+  }
+
   .table .audio {
     align-items: center;
   }
