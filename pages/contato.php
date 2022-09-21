@@ -1,5 +1,5 @@
 <div id="map"></div>
-<div class="contato-container">
+<div style="margin-right: 4.5%;" class="contato-container">
 	<div class="center">
 		<form method="post" action="">
 			<input required type="text" name="nome" placeholder="Nome...">
@@ -11,7 +11,7 @@
 			<textarea required placeholder="Sua mensagem..." name="mensagem"></textarea>
 			<div></div>
 			<input type="hidden" name="identificador" value="form_contato" />
-			<input type="submit" name="acao" value="Enviar">
+			<input  type="submit" name="acao" value="Enviar">
 		</form>
 	</div><!--center-->
 </div><!--contato-container-->
