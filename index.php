@@ -1,6 +1,6 @@
 
 <?php
-include('config_web.php');
+include('config_local.php');
 ?>
 
 <?php Site::updateUsuarioOnline();?>
@@ -81,8 +81,8 @@ include('config_web.php');
     	<nav class="desktop right">
 				<ul>
 					<li><a class="home" href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
-<!--					<li><a href="<?php echo INCLUDE_PATH; ?>galeria">Galeria</a></li>
-					<li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>galeria">Galeria</a></li>
+	<!--				<li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
 -->					<li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
 				</ul>
@@ -93,8 +93,8 @@ include('config_web.php');
 			 	</div>
 				<ul>
 					<li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
-	<!--				<li><a href="<?php echo INCLUDE_PATH; ?>galeria">Galeria</a></li>
-					<li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>galeria">Galeria</a></li>
+		<!--			<li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
  -->					<li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
 				</ul>
@@ -138,15 +138,15 @@ include('config_web.php');
 
 ?>
 </div><!--container-principal-->
-<footer <?php if(isset($pagina404) && $pagina404 == true) echo 'class="fixed"'; ?>>
-		<div class="center">
-			<p>Todos os direitos reservados</p>
-		</div><!--center-->
-<button class="button">
-	 <a href="https://omundodadarthi.lojaintegrada.com.br" target="_blank"><i class="fas fa-cart-plus"></i></a>
-</button><!--button-->
 
-	</footer>
+<footer <?php if(isset($pagina404) && $pagina404 == true) echo 'class="fixed"'; ?>>
+	<div class="center">
+		<p>Todos os direitos reservados</p>
+	</div><!--center-->
+	<button class="button">
+		<a href="https://omundodadarthi.lojaintegrada.com.br" target="_blank"><i class="fas fa-cart-plus"></i></a>
+	</button><!--button-->
+</footer>
 
 	<script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
 	<script src="<?php echo INCLUDE_PATH; ?>js/nuevo.js"></script>

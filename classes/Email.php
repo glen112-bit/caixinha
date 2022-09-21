@@ -10,16 +10,16 @@
 
 			$this->mailer = new PHPMailer;
 
-			$this->mailer->isSMTP();                                      // Set mailer to use SMTP
-			$this->mailer->Host = $host;  				  // Specify main and backup SMTP servers
-			$this->mailer->SMTPAuth = true;                               // Enable SMTP authentication
-			$this->mailer->Username = $username;                 // SMTP username
-			$this->mailer->Password = $senha;                           // SMTP password
-			$this->mailer->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-			$this->mailer->Port = 465;                                    // TCP port to connect to
+			$this->mailer->isSMTP();                            // Set mailer to use SMTP
+			$this->mailer->Host = $host;  			            	  // Specify main and backup SMTP servers
+			$this->mailer->SMTPAuth = true;                     // Enable SMTP authentication
+			$this->mailer->Username = $username;                // SMTP username
+			$this->mailer->Password = $senha;                   // SMTP password
+			$this->mailer->SMTPSecure = 'ssl';                  // Enable TLS encryption, `ssl` also accepted
+			$this->mailer->Port = 465;                          // TCP port to connect to
 
 			$this->mailer->setFrom($username,$name);
-			$this->mailer->isHTML(true);                                  // Set email format to HTML
+			$this->mailer->isHTML(true);                        // Set email format to HTML
 			$this->mailer->CharSet = 'UTF-8';
 
 		}
