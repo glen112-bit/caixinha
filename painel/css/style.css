@@ -14,7 +14,119 @@ body {
 body {
 	overflow-x: hidden;
 }
+/**galeria***/
+.wraper-table{
+	display:grid;
+}
+nav .desktop ul {
+  position: relative;
+  top: 6px;
+  list-style-type: none;
+  font-weight: 400;
+}
+nav.desktop li {
+  font-weight: 400;
+  font-size: 15px;
+  padding: 0 30px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 600;
+}
+section.especialidades {
+  padding: 40px 0;
+  background: #e2e2e2;
+}
 
+section.especialidades h2.title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+  color: #999;
+}
+
+.box-especialidade {
+  margin: 40px 0;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.box-especialidade h3 {
+  color: #404580;
+  font-size: 40px;
+}
+
+.box-especialidade h4 {
+  font-weight: 300;
+  font-size: 25px;
+  color: #bababa;
+}
+img{
+  margin:6px;
+  border-top: 2px solid #bbb;
+  padding-top: 1px;
+  border-radius: 6%;
+}
+audio{
+  margin:0 auto;
+}
+/*Paginacao*/
+ul{
+  list-style-type: none;
+  display:flex;
+}
+li, a{
+  margin: 4px;
+}
+.paginacao {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.paginacao a {
+  font-size: 18px;
+  margin: 8px 8px;
+  display: inline-block;
+  padding: 3px 4px;
+  border: 1px solid #404580;
+  background-color: #ffe800;
+  border-radius: 25%;
+  text-decoration: none;
+  color: #0000ff;
+  font-weight: 600;
+}
+
+.paginacao a.page-selected {
+  background: rgb(220, 220, 220);
+}
+.box-especialidade p {
+  color: #444;
+  font-size: 15px;
+  margin-top: 10px;
+}
+.box-especialidade .table {
+  width: 100%;
+  max-height: auto;
+}
+.nav-paginacao.audio {
+  position: relative;
+  display: flex;
+}
+.servicos-container,
+.depoimentos-container {
+  padding: 0 50px;
+}
+.nav-paginacao input {
+  width: 20px;
+}
+button {
+  border-radius: 50%;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  font-size: none;
+  background: none;
+  align-items: right;
+}
 /*Página de login*/
 .box-login {
 	box-shadow: 10px 10px 5px rgb(200, 200, 200);
@@ -109,6 +221,15 @@ body {
 
 .menu-wraper {
 	width: 250px;
+}
+figure > img{
+	max-width: 80%;
+	display: flex;
+	border-radius: 25px;
+	position:relative;
+}
+img {
+	width:60%;
 }
 
 div.menu {
@@ -296,20 +417,20 @@ a.btn.order {
 
 /*Paginacao*/
 
-.paginacao {
-	margin: 20px 0;
-	text-align: center;
-}
+/* .paginacao { */
+	/* margin: 20px 0; */
+	/* text-align: center; */
+/* } */
 
-.paginacao a {
-	font-size: 14px;
-	margin: 0 8px;
-	display: inline-block;
-	padding: 3px 4px;
-	border: 1px solid #ccc;
-	text-decoration: none;
-	color: #666;
-}
+/* .paginacao a { */
+	/* font-size: 14px; */
+	/* margin: 0 8px; */
+	/* display: inline-block; */
+	/* padding: 3px 4px; */
+	/* border: 1px solid #ccc; */
+	/* text-decoration: none; */
+	/* color: #666; */
+/* } */
 
 .paginacao a.page-selected {
 	background: rgb(220, 220, 220);

@@ -22,7 +22,7 @@ class Painel
 			if(file_exists('pages/'.$url[0].'.php')){
 				include('pages/'.$url[0].'.php');
 			}else{
-				//P√°gina n√£o existe!
+				//Pagina no existe!
 				header('Location: '.INCLUDE_PATH_PAINEL);
 			}
 		}else{
