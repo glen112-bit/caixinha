@@ -64,8 +64,8 @@ include('config_web_com.php');
 				echo '<target target="servicos" />';
 				break;
 
-			case 'galeria':
-				echo '<target target="galeria" />';
+			case 'cadastro':
+				echo '<target target="cadastro" />';
 				break;
 
 		}
@@ -78,22 +78,23 @@ include('config_web_com.php');
 		<div class="center">
 			<div class="desktop logo left"><strong><h2><a  href="#""<?php echo INCLUDE_PATH_PAINEL; ?>"><p>oMundo<p>da<p>Darthi</p></a></h2></strong></div><!--logo-->
 
-    	<nav class="desktop right">
-				<ul>
+    	<nav class="desktop right desktop-right">
+				<ul class="desktop-right">
 					<li><a class="home" href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
-					<li><a href="<?php echo INCLUDE_PATH; ?>galeria">Galeria</a></li>
-	<!--				<li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
+				<li><a href="<?php echo INCLUDE_PATH; ?>painel">Painel</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>galeria">Cadastro</a></li>
+	<!--		<li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
 -->					<li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
 				</ul>
 			</nav>
-			 <nav class="mobile right">
+			 <nav class="mobile right mobile-right" >
 			 	<div class="botao-menu-mobile">
 			 		<i class="fa fa-bars" aria-hidden="true"></i>
 			 	</div>
 				<ul>
 					<li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
-					<li><a href="<?php echo INCLUDE_PATH; ?>galeria">Galeria</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>galeria">Cadastro</a></li>
 		<!--			<li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
  -->					<li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
@@ -131,7 +132,7 @@ include('config_web_com.php');
 				$pagina404 = true;
 				include('pages/404.php');
 			}else{
-				include('pages/clean.php');
+				include('./painel/clean.php');
 			}
 		}
 

@@ -354,6 +354,9 @@ p.nome-autor {
   font-weight: bold;
 }
 
+ul .desktop-rigth {
+  display: flex; 
+}
 .servicos ul {
   margin: 20px 0;
 }
