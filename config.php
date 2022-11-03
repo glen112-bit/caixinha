@@ -11,24 +11,22 @@
 
 	spl_autoload_register($autoload);
 
-include('config_url.php');
-	// define('INCLUDE_PATH','http://localhost/caixinha/api/');
-	// define('INCLUDE_PATH_PAINEL',INCLUDE_PATH.'painel/');
+	define('INCLUDE_PATH','http://omundodadarthi.com.br/');
+	define('INCLUDE_PATH_PAINEL',INCLUDE_PATH.'painel/');
 
-	define('BASE_DIR_PAINEL',__DIR__.'/painel/');
+  define('BASE_DIR_PAINEL',__DIR__.'/painel/');
 	define('BASE_DIR_AUDIO',INCLUDE_PATH.'cartas/');
 	define('BASE_DIR_AUDIO_CARTAS',INCLUDE_PATH.'audio/cartas/');
 	define('BASE_DIR_AUDIO_CARTAS_MP3',INCLUDE_PATH.'audio/cartas/mp3/');
   //conectar con banco de datos
 	define('HOST','localhost');
-	define('USER','root');
-	define('PASSWORD','');
+	define('USER','admin_caixa');
+	define('PASSWORD','121212');
 	define('DATABASE','admin_caixa');
-
-
 	//funciones
 	define('NOME_EMPRESA','Glen/Code');
-	//Funções do painel
+	
+	//Funciones do painel
 	function pegaCargo($indice){
 		return Painel::$cargos[$indice];
 	}
