@@ -81,9 +81,9 @@ include('config_web_com.php');
     	<nav class="desktop right desktop-right">
 				<ul class="desktop-right">
 					<li><a class="home" href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
-				<li><a href="<?php echo INCLUDE_PATH; ?>painel">Painel</a></li>
+			         	<li><a href="<?php echo INCLUDE_PATH; ?>painel">Painel</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>galeria">Cadastro</a></li>
-	<!--		<li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
+	                        <!--    <li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
 -->					<li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
 				</ul>
@@ -94,6 +94,7 @@ include('config_web_com.php');
 			 	</div>
 				<ul>
 					<li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>painel">Painel</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>galeria">Cadastro</a></li>
 		<!--			<li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
