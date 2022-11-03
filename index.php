@@ -1,6 +1,6 @@
 
 <?php
-include('config_web_com.php');
+include('./config_local.php');
 ?>
 
 <?php Site::updateUsuarioOnline();?>
