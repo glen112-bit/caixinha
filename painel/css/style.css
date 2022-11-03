@@ -61,9 +61,7 @@ section.especialidades h2.title {
   color: #bababa;
 }
 img{
-  margin:6px;
-  border-top: 2px solid #bbb;
-  padding-top: 1px;
+  border: 2px solid #bbb;
   border-radius: 6%;
 }
 audio{
@@ -299,31 +297,31 @@ div.box-usuario {
 }
 
 .avatar-usuario i {
-	position: relative;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	font-size: 50px;
-	color: #2f3d42;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: #2f3d42;
 }
 
 .imagem-usuario {
-	display: inline-block;
-	width: 130px;
-	height: 130px;
-	position: relative;
-	border-radius: 50%;
-	border: 3px solid #2f3d42;
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  position: relative;
+  border-radius: 50%;
+  border: 3px solid #2f3d42;
 }
 
 .imagem-usuario img {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 .nome-usuario {
