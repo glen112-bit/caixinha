@@ -442,6 +442,11 @@ section.erro-404 a {
 .contato-container {
   padding: 40px 0;
   text-align: center;
+  margin-right: 15%;
+}
+
+.formCadastro {
+  margin-right: 6%;
 }
 
 .contato-container input[type="text"] {

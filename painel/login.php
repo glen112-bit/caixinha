@@ -73,7 +73,6 @@
 			<input type="password" name="password" placeholder="Senha..." required>
 			<div class="form-group-login left">
 				<input type="submit" name="acao" value="Logar!">
-			<a href="<?php INCLUDE_PATH_PAINEL ?> adicionar-usuario">Cadastrar</a>
 			</div>
 			<div class="form-group-login right">
 				<label>Lembrar-me</label>
