@@ -60,7 +60,7 @@ section.especialidades h2.title {
   font-size: 25px;
   color: #bababa;
 }
-img{
+img.carta{
   border: 2px solid #bbb;
   border-radius: 6%;
 }
@@ -223,8 +223,10 @@ button {
 figure > img{
 	max-width: 80%;
 	display: flex;
-	border-radius: 25px;
 	position:relative;
+}
+img.bt-img{
+  border-radius:5%;
 }
 img {
 	width:60%;

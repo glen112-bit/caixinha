@@ -76,16 +76,24 @@ include('./config_local.php');
 	</div><!--overlay-loading-->
 <header style="padding-left:0rem">
 		<div class="center">
-			<div class="desktop logo left"><strong><h2><a  href="#""<?php echo INCLUDE_PATH_PAINEL; ?>"><p>oMundo<p>da<p>Darthi</p></a></h2></strong></div><!--logo-->
+			<div class="desktop logo left">
+				<strong>
+					<h2>
+						<a  href="#""<?php echo INCLUDE_PATH_PAINEL; ?>">
+							<p>oMundo<p>da<p>Darthi</p>
+						</a>
+					</h2>
+				</strong>
+			</div><!--logo-->
 
     	<nav class="desktop right desktop-right">
 				<ul class="desktop-right">
 					<li><a class="home" href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
-			         	<li><a href="<?php echo INCLUDE_PATH; ?>painel">Painel</a></li>
+			   	<li><a href="<?php echo INCLUDE_PATH; ?>painel">Painel</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>galeria">Cadastro</a></li>
-	                        <!--    <li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
+	<!--    <li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
--->					<li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+-->				<li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
 				</ul>
 			</nav>
 			 <nav class="mobile right mobile-right" >
@@ -95,10 +103,9 @@ include('./config_local.php');
 				<ul>
 					<li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>painel">Painel</a></li>
-					<li><a href="<?php echo INCLUDE_PATH; ?>galeria">Cadastro</a></li>
-		<!--			<li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
+		<!--	<li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
 					<li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
- -->					<li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+ -->			<li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
 				</ul>
 			</nav>
      <div class="clear"></div>
@@ -129,7 +136,7 @@ include('./config_local.php');
 			include('pages/'.$url.'.php');
 		}else{
 			//Podemos fazer o que quiser, pois a página não existe.
-			if($url != 'depoimentos' && $url != 'servicos' && $url != 'galeria'){
+			if($url != 'depoimentos' && $url != 'servicos' && $url != 'cadastro'){
 				$pagina404 = true;
 				include('pages/404.php');
 			}else{
@@ -141,19 +148,21 @@ include('./config_local.php');
 ?>
 </div><!--container-principal-->
 
-<footer <?php if(isset($pagina404) && $pagina404 == true) echo 'class="fixed"'; ?>>
+<footer  <?php if(isset($pagina404) && $pagina404 == true) echo 'class="fixed"'; ?>>
 	<div class="center">
-		<p>Todos os direitos reservados</p>
+		<p style="margin-left: 26px;">Todos os direitos reservados</p>
 	</div><!--center-->
-	<button class="button">
-		<a href="https://omundodadarthi.lojaintegrada.com.br" target="_blank"><i class="fas fa-cart-plus"></i></a>
+	<button  style="margin-left: 26px;"class="button">
+		<a href="https://omundodadarthi.lojaintegrada.com.br" target="_blank"><i class="fas fa-cart-plus"></i></a><br/>
+		<a href="<?php echo INCLUDE_PATH; ?>cadastro"><p> Cadastro</p></a> 
 	</button><!--button-->
+
 </footer>
 
 	<script src="<?php echo INCLUDE_PATH; ?>js/jquery.js"></script>
 	<script src="<?php echo INCLUDE_PATH; ?>js/nuevo.js"></script>
 <?php
-		if($url == 'home' || $url == ''){
+		if($url == 'home' || $url =='cadastro' || $url == ''){
 ?>
   <script src="<?php echo INCLUDE_PATH; ?>js/slider.js"></script>
 <?php  } ?>

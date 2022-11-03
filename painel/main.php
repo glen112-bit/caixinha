@@ -76,7 +76,7 @@
 
   <?php Painel::carregarPagina(); ?>
 <figure class="box-content">
-  <img class="clear center" src="../images/WhatsApp Image 2021-05-06 at 12.45.01 copia.jpg" alt="album">
+  <img class="clear center bt-img" src="../images/WhatsApp Image 2021-05-06 at 12.45.01 copia.jpg" alt="album">
 </figure>
 </div><!--content-->
 
