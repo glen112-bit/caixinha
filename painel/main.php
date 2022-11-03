@@ -28,7 +28,7 @@
      </div><!--avatar-usuario-->
   <?php }else{ ?>
      <div class="imagem-usuario">
-       <img src="<?php echo INCLUDE_PATH_PAINEL ?>uploads/<?php echo $_SESSION['img']; ?>" />
+       <img class="avatar-img" src="<?php echo INCLUDE_PATH_PAINEL ?>uploads/<?php echo $_SESSION['img']; ?>" />
      </div><!--avatar-usuario-->
   <?php } ?>
   <div class="nome-usuario">

@@ -11,7 +11,7 @@
 			<textarea required placeholder="Sua mensagem..." name="mensagem"></textarea>
 			<div></div>
 			<input type="hidden" name="identificador" value="form_contato" />
-			<input style="margin-right: 4%;" type="submit" name="acao" value="Enviar">
+			<input type="submit" name="acao" value="Enviar">
 		</form>
 	</div><!--center-->
 </div><!--contato-container-->

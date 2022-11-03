@@ -1,7 +1,7 @@
 
 <?php
-//include('./config_local.php');
-include('./config.php');
+include('./config_local.php');
+// include('./config.php');
 ?>
 
 <?php Site::updateUsuarioOnline();?>
