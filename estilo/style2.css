@@ -29,11 +29,11 @@ body {
 input {
   border: 0;
 }
-img {
-  width: 100%;
-  max-width: 400px;
-  border-radius:1.50rem;
-}
+/* img { */
+  /* width: 100%; */
+  /* max-width: 400px; */
+  /* border-radius:1.50rem; */
+/* } */
 header {
   padding-left: 0rem;
 }
@@ -116,7 +116,7 @@ header > section.loja{
   color: white;
   margin-right: 5%;
 }
-div button.desktop{
+div > button.desktop{
   border-radius:0;
 }
 .logo a {
@@ -131,7 +131,7 @@ div button.desktop{
 .mobile {
   display: none;
 }
-nav .desktop ul {
+nav.desktop ul {
   position: relative;
   top: 6px;
   list-style-type: none;
@@ -152,10 +152,10 @@ nav.desktop a {
 nav.desktop a:hover {
   text-decoration: underline;
 }
-header nav ul {
-  width: 31rem;
-  align-items: center;
-}
+/* header nav ul { */
+  /* width: 31rem; */
+  /* align-items: center; */
+/* } */
 section.banner-container {
   width: 100%;
   height: 600px;
@@ -191,10 +191,10 @@ section.imagenFondo{
   padding:2rem;
   width:100%;
 }
-   section.imagenFondo img{
-   width: 100%; 
-   zoom:1.50;
-  }
+ section.imagenFondo img{
+ width: 100%; 
+ zoom:1.50;
+}
 section.banner-container form {
   width: 98%;
   max-width: 500px;
@@ -329,7 +329,7 @@ section.extras {
 .nav-paginacao input {
   width: 20px;
 }
-section.extras .title {
+.extras .title {
   color: white;
   font-weight: 300;
   font-size: 25px;
