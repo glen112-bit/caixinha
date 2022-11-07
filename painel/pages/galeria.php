@@ -16,7 +16,8 @@ $cartas = Painel::selectA('tb_admin.cartas',($paginaAtual - 1)*$porPagina, $porP
 						<div id="target" class="center table">
 							<div class="id"><?php  $value['id']; ?></div>
 							<div class="nome"><?php echo $value['nome']; ?></div>
-							<img class="cartaAmostrar" src=" <?php echo BASE_DIR_AUDIO, $value ['carta']; ?>"</img>
+							<img  style="border: 3px solid #535757;"
+										class="cartaAmostrar" src=" <?php echo BASE_DIR_AUDIO, $value ['carta']; ?>"</img>
 						</div><!--table-->
 				<?php   } ?>
 			</div><!--table-->
