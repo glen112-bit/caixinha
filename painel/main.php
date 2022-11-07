@@ -37,9 +37,8 @@
   </div><!--nome-usuario-->
    </div><!--box-usuario-->
   <div class="items-menu">
-  <h2>Galeria</h2>
-  <a<?php selecionadoMenu('galeria') ?> href="<?php echo INCLUDE_PATH ?>painel/galeria">Galeria</a>
-  <h2>Cadastro</h2>
+ <h2><a<?php selecionadoMenu('home') ?> href="<?php echo INCLUDE_PATH_PAINEL ?>home">Home</a></h2>
+ <h2>Cadastro</h2>
   <a<?php selecionadoMenu('cadastrar-depoimento') ?> href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-depoimento">Cadastrar Depoimento</a>
   <a<?php selecionadoMenu('cadastrar-servico') ?> href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-servico">Cadastrar Serviços</a>
   <a<?php selecionadoMenu('cadastrar-slides') ?> href="<?php echo INCLUDE_PATH_PAINEL ?>cadastrar-slides">Cadastrar Slides</a>
@@ -47,6 +46,8 @@
   <a<?php selecionadoMenu('listar-depoimentos') ?> href="<?php echo INCLUDE_PATH_PAINEL ?>listar-depoimentos">Listar Depoimento</a>
   <a<?php selecionadoMenu('listar-servicos') ?> href="<?php echo INCLUDE_PATH_PAINEL ?>listar-servicos">Listar Serviços</a>
   <!--<a<?php selecionadoMenu('listar-slides') ?> href="<?php echo INCLUDE_PATH_PAINEL ?>listar-slides">Listar Slides</a>-->
+  <h2>Galeria</h2>
+  <a<?php selecionadoMenu('galeria') ?> href="<?php echo INCLUDE_PATH ?>painel/galeria">Galeria</a>
   <h2>Administracao do Painel</h2>
   <a<?php selecionadoMenu('editar-usuario') ?> href="<?php echo INCLUDE_PATH_PAINEL ?>editar-usuario">Editar Usuario</a>
   <a<?php selecionadoMenu('adicionar-usuario') ?><?php verificaPermissaoMenu(2) ?> href="<?php echo INCLUDE_PATH_PAINEL ?>adicionar-usuario">Adicionar Usuarios</a>

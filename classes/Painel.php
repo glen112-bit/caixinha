@@ -4,7 +4,7 @@ class Painel
 {
 		public static $cargos = [
 		'0' => 'Normal',
-		'1' => 'Sub Administrador',
+		'1' => 'Album',
 		'2' => 'Administrador'];
 
 	public static function logado(){
@@ -26,7 +26,7 @@ class Painel
 				header('Location: '.INCLUDE_PATH_PAINEL);
 			}
 		}else{
-			include('pages/galeria.php');
+			include('pages/home.php');
 		}
 	}
 
