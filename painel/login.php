@@ -73,6 +73,17 @@
 			<input type="password" name="password" placeholder="Senha..." required>
 			<div class="form-group-login left">
 				<input type="submit" name="acao" value="Logar!">
+				<a style="
+									padding: 0.65rem;
+									cursor: pointer;
+									margin-top: 10px;
+									font-size: 14px;
+									background: #00bfa5;
+									color: white;
+									border: 0;"
+					 href="<?php echo INCLUDE_PATH; ?>"
+						value="Home!"
+						>Home!</a> 
 			</div>
 			<div class="form-group-login right">
 				<label>Lembrar-me</label>
