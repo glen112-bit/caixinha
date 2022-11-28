@@ -7,18 +7,43 @@
 
 	<div class="center">
 
-<!--
-		<form method="post">
-			<h2>Qual o seu melhor email?</h2>
-			<input type="email" name="email">
-			<input type="submit" name="acao" value="Cadastrar">
-		</form>-->
 	</div><!--center-->
 		<div class="bullets">
 
 		</div><!--bullets-->
 </section><!--banner-container-->
-
+ <?php
+	// if(isset($_POST['acao'])){
+		// if($_POST['email'] != ''){
+			// $email = $_POST['email'];
+			// if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+				// ENVIAR email
+				// $mail = new Email('omundodadarthi.com.br', 'mail@omundodadarthi.com.br', 'darthi123456', 'Darthi');
+				// $mail->addAdress('contato@omundodadarthi.com.br', 'Darthi');
+				// $info = ['assunto'=> 'um novo email cadastrado no site', 'corpo'=>$email]
+				// $mail->formatarEmail($info);
+				// if($mail->enviarEmail()){
+					// echo '<script>alert("Enviado com Sucesso")</script>'
+				// }else{
+					// echo '<script>alert("Algo deu Errado")</script>'
+				// }
+			// }else{
+			// echo '<script>alert("Formato de Email V√°lido!!!")</script>';
+			// }
+		// }else{
+			// echo '<script>alert("Campos vazios n√£o s√£o Permitidos!!!")</script>';
+		// }
+	// }
+// ?>
+<!--
+<section>
+		<form method="post">
+			<h2>Qual o seu melhor email?</h2>
+			<input type="email" name="email">
+			<input type="submit" name="acao" value="Cadastrar">
+		</form>
+</section>
+-->
 	<section class="descricao-autor">
 		<div class="center">
 			<div class="w50 left">

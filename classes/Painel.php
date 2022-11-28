@@ -77,8 +77,8 @@ class Painel
 		}
 	} public static function imagemValida($imagem){
 		if($imagem['type'] == 'image/jpeg' ||
-			$imagem['type'] == 'imagem/jpg' ||
-			$imagem['type'] == 'imagem/png'){
+			$imagem['type'] == 'image/jpg' ||
+			$imagem['type'] == 'image/png'){
 
 			$tamanho = intval($imagem['size']/1024);
 			if($tamanho < 300)
@@ -90,15 +90,18 @@ class Painel
 		}
 	}
 
+	// public static function uploadFile($file){
+		// $formatoArquivo = explode('.',$file['nome']);
+		// $imagemNome = uniqid().'.'.$formatoArquivo[count($formatoArquivo) - 1];
+			// if(move_uploaded_file($file['tmp_name'], BASE_DIR_PAINEL.'/uploads/'.$file['name']))
+				// return $file['name'];
+			// else
+				// return false;
+		// }
 	public static function uploadFile($file){
-		$formatoArquivo = explode('.',$file['name']);
-		$imagemNome = uniqid().'.'.$formatoArquivo[count($formatoArquivo) - 1];
-			if(move_uploaded_file($file['tmp_name'],BASE_DIR_PAINEL.'/uploads/'.$imagemNome))
-				return $imagemNome;
-			else
-				return false;
-		}
-	  public static function deleteFile($file){
+		move_uploaded_file($file['tmp_name'],BASE_DIR_PAINEL. '/uploads/'. $file['name']);
+	}
+ public static function deleteFile($file){
 		@unlink('uploads/'.$file);
 	}
 
