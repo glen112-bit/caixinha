@@ -3,23 +3,25 @@
 
 	<form method="post" enctype="multipart/form-data">
 
-		<?php
+<?php
 			if(isset($_POST['acao'])){
-				//Enviei o meu formulário.
+				// Enviei o meu formulário.
 
 				$nome = $_POST['nome'];
 				$senha = $_POST['password'];
 				$imagem = $_FILES['imagem'];
 				$imagem_atual = $_POST['imagem_atual'];
 				$usuario = new Usuario();
+				print_r($imagem);
 				if($imagem['name'] != ''){
 
-					//Existe o upload de imagem.
+				$_SESSION['img'] = $imagem;
+					// Existe o upload de imagem.
 					if(Painel::imagemValida($imagem)){
-						Painel::deleteFile($imagem_atual);
+						// Painel::deleteFile($imagem_atual);
 						$imagem = Painel::uploadFile($imagem);
 						if($usuario->atualizarUsuario($nome,$senha,$imagem)){
-							$_SESSION['img'] = $imagem;
+													print_r($imagem);
 							Painel::alert('sucesso','Atualizado com sucesso junto com a imagem!');
 						}else{
 							Painel::alert('erro','Ocorreu um erro ao atualizar junto com a imagem');
@@ -51,7 +53,7 @@
 		<div class="form-group">
 			<label>Imagem</label>
 			<input type="file" name="imagem"/>
-			<input type="hidden" name="imagem_atual" value="<?php echo $_SESSION['img']; ?>">
+			<input type="hidden" name="imagem" value="<?php echo $_SESSION['img']; ?>">
 		</div><!--form-group-->
 
 		<div class="form-group">
