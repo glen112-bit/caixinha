@@ -1,6 +1,6 @@
 
 <?php
-include('./config_local.php');
+include('./config.php');
 // include('./config.php');
 ?>
 
